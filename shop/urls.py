@@ -12,4 +12,5 @@ urlpatterns = [
     path("productviewLaptop/<int:id>", views.productViewLaptop, name="ProductViewLaptop"),
     path("productviewAccessories/<int:id>", views.productViewAccessories, name="ProductViewAccessories"),
     path("checkout/", views.checkout, name="Checkout"),
+    path('concact/', views.concact, name='concact'),
 ]
