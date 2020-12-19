@@ -48,3 +48,11 @@ def productViewAccessories(request, id):
 
 def checkout(request):
     return HttpResponse("We are at checkout")
+
+def concact(request):
+    sites = ['''<p><a href="https://api.whatsapp.com/send?phone=919631055896">Chat with Sitanshu Shekhar</a></p>''',
+             '''<p><a href="https://api.whatsapp.com/send?phone=919534941704">Chat with Kumar Shubham</a></p>''',
+             '''<p><a href="https://api.whatsapp.com/send?phone=919097904798">Chat with Saurabh Kumar</a></p>''',
+             '''<p><a href="https://api.whatsapp.com/send?phone=918651032924">Chat with Rajkishore Kumar Yadav</a></p>''',
+             ]
+    return HttpResponse((sites))
